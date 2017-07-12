@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:id="@+id/rel"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/msgParLayout">
+        <!--  <ImageView
+              android:id="@+id/imageView31"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_marginTop="0dp"
+              android:layout_weight="3"
+              android:src="@drawable/user_pratikshya" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/arr_left"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginRight="-15dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/arrow_bg1"-->
+            <!--/>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp">
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/frameLayout">
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="210dp"
+                    android:src="@drawable/ic_contact_picture_holo_light"
+                    android:id="@+id/imgData"
+                    android:paddingTop="12dp" />
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/captionData"
+                    android:text="Add caption here "
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:id="@+id/textBoxLayout">
+
+                <TextView
+                    android:id="@+id/msgtextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--<ImageView-->
+            <!--android:id="@+id/arr_right"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="-12dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/arrow_bg2"-->
+            <!--/>-->
+
+        <!--   <ImageView
+               android:id="@+id/imageView2"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_marginTop="0dp"
+               android:layout_weight="3"
+               android:src="@drawable/user_pratikshya" />-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingRight="5dp"
+        android:gravity="right"
+        android:layout_below="@+id/msgParLayout"
+        android:id="@+id/statustime">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textAllCaps="true"
+            android:textSize="10dp"
+            android:id="@+id/time"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+        <ImageView
+            android:gravity="right"
+            android:id="@+id/statusImage"
+            android:layout_width="17dp"
+            android:layout_height="12dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

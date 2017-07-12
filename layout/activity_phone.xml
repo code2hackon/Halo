@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0dip"
+                android:orientation="vertical"
+                android:background="@color/white"
+                tools:context=".PhoneActivity"
+    >
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/logo2"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/numberInputLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_weight="2">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/numberInputLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/selectcountry"
+            android:textAllCaps="true"
+            android:textColor="@color/send_otp_blue"
+            android:textSize="18sp"
+            android:gravity="bottom" />
+
+        <com.chandan.halo.CountrySpinner
+            android:layout_weight="1"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enterphonenumber"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textColor="@color/send_otp_blue"
+            android:textSize="18sp"
+            />
+
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:inputType="phone"
+                android:textColor="@color/send_otp_blue"
+                android:textSize="28sp">
+            </EditText>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingEnd="40dp"
+        android:paddingStart="40dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/smsVerificationButton"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_blue_generic"
+            android:minHeight="56dp"
+            android:minWidth="132dp"
+            android:onClick="onButtonClicked"
+            android:text="SMS Verification"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_weight="0.07" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

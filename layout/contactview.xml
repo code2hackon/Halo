@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp">
+
+        <!--<ImageView-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/pic"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:paddingRight="3dp" />-->
+        <!--android:src="@drawable/ic_contact_picture_holo_light"-->
+        <!--style="@style/quickContactBadgeStyle"-->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp">
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:paddingRight="3dp" />
+
+            <TextView
+                android:id="@+id/imgText"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/contact_default_circle"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                tools:text="A" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linContact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contact_name"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="3dp"
+                    android:singleLine="true"
+                    android:text="Medium Text  Long name size"
+                    android:textColor="#6e6e6e" />
+
+                <TextView
+                    android:id="@+id/contact_ph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:paddingLeft="3dp"
+                    android:text="Small Text" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/contact_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/invite"
+                android:textColor="@color/bg_login" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
